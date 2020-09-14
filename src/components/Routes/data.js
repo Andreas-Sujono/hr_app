@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+import React, { lazy } from 'react';
 import { Redirect } from 'react-router-dom';
 
 const componentRoutes = [
@@ -15,7 +15,7 @@ const componentRoutes = [
         type: 'public',
         path: `/login`,
         exact: true,
-        component: lazy(() => import('admin_desktop/components/Login')),
+        component: lazy(() => import('components/Login')),
     },
 ];
 
